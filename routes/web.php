@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('priests','PriestController');
+
+Route::resource('loyals','LoyalController');
+Route::resource('ceremonialists','CeremonialistController');
+Route::resource('ceremonies','CeremonyController');
