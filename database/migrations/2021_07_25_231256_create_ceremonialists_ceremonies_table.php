@@ -20,7 +20,7 @@ class CreateCeremonialistsCeremoniesTable extends Migration
             $table->unsignedBigInteger('ceremonialist_id');
 
 
-            $table->foreign('ceremony_id')->references('id')->on('ceremonies');
+            $table->foreign('ceremony_id')->references('id')->on('ceremonies')->onDelete('cascade');
             $table->foreign('ceremonialist_id')->references('id')->on('ceremonialists');
 
             $table->timestamps();
