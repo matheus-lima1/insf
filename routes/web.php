@@ -21,4 +21,4 @@ Route::resource('priests','PriestController');
 
 Route::resource('loyals','LoyalController');
 Route::resource('ceremonialists','CeremonialistController');
-Route::resource('ceremonies','CeremonyController');
+Route::resource('ceremonies','CeremonyController')->middleware('guest');
