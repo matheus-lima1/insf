@@ -39,7 +39,7 @@
 
     <div class="form-group">
         <label>CEP</label>
-        <input type="text" name="cep" class="form-control @error('cep') is-invalid @enderror" value="{{old('cep')}}">
+        <input type="number" name="cep" class="form-control @error('cep') is-invalid @enderror" value="{{old('cep')}}">
 
         @error('cep')
         <div class="invalid-feedback">

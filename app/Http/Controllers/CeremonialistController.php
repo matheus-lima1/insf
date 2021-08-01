@@ -3,27 +3,27 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Ceremonialist;
 
 class CeremonialistController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
+    
+    private $ceremonialist;
+
+    public function __construct(Ceremonialist $ceremonialist){
+        $this->ceremonialist = $ceremonialist;
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public function index()
+    {
+        $ceremonialists = $this->ceremonialist->paginate(15);
+        return view('ceremonialists.index', compact('ceremonialists'));
+    }
+
+    
     public function create()
     {
-        //
+        return view('ceremonialists.create');
     }
 
     /**
@@ -34,7 +34,10 @@ class CeremonialistController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $ceremonialist = $this->ceremonialist->create($data);
+
+        return redirect()->route('ceremonialists.index');
     }
 
     /**
@@ -56,7 +59,8 @@ class CeremonialistController extends Controller
      */
     public function edit($id)
     {
-        //
+        $ceremonialist = $this->ceremonialist->find($id);
+        return view('ceremonialists.edit', compact('ceremonialist'));
     }
 
     /**
@@ -68,7 +72,12 @@ class CeremonialistController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        $ceremonialist = $this->ceremonialist->find($id);
+        $ceremonialist->update($data);
+
+        return redirect()->route('ceremonialists.index');
+    
     }
 
     /**
@@ -79,6 +88,9 @@ class CeremonialistController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $ceremonialist = $this->ceremonialist->find($id);
+        $ceremonialist->delete();
+
+        return redirect()->route('ceremonialists.index');
     }
 }
