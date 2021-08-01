@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Ceremony extends Model
 {
 
-    protected $fillable = ['date','time','tithe'];
+    protected $fillable = ['date','time','tithe','priest_id'];
 
     public function priest(){
         return $this->hasMany(Priest::class);
