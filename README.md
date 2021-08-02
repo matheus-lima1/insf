@@ -29,11 +29,16 @@ Ele consiste em uma série de funcionalidades que facilitam a gestão dos recurs
 ## Relatório de entrada de caixa
 > ![Web 3](https://github.com/matheus-lima1/COM210/blob/main/assets/WhatsApp%20Image%202021-08-02%20at%2017.36.47.jpeg)
 
+## Relatório de cerimônia
+> ![Web 4](https://github.com/matheus-lima1/COM210/blob/main/assets/WhatsApp%20Image%202021-08-02%20at%2019.07.42.jpeg)
+
+> ![Web 5](https://github.com/matheus-lima1/COM210/blob/main/assets/WhatsApp%20Image%202021-08-02%20at%2019.07.54.jpeg)
+
 ## Estatística de sexo
-> ![Web 4](https://github.com/matheus-lima1/COM210/blob/main/assets/WhatsApp%20Image%202021-08-02%20at%2018.45.31.jpeg)
+> ![Web 6](https://github.com/matheus-lima1/COM210/blob/main/assets/WhatsApp%20Image%202021-08-02%20at%2018.45.31.jpeg)
 
 ## Estatística de idade
-> ![Web 5](https://github.com/matheus-lima1/COM210/blob/main/assets/WhatsApp%20Image%202021-08-02%20at%2018.45.40.jpeg)
+> ![Web 7](https://github.com/matheus-lima1/COM210/blob/main/assets/WhatsApp%20Image%202021-08-02%20at%2018.45.40.jpeg)
 
 # Tecnologias utilizadas
 
