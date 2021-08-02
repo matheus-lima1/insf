@@ -19,6 +19,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"></script>
 
 	<title>INSF</title>
 </head>
@@ -42,6 +43,18 @@
         <li class="nav-item">
           {{-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="false">Fiéis</a> --}}
           <a class="nav-link" href="{{route('loyals.index')}}">Fiéis</a>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Relatórios
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="{{route('report.tithe')}}">Dízimo do Mês</a>
+              <a class="dropdown-item" href="{{route('report.statistic')}}">Estatística de Fiéis</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
         </li>
       </ul>
     </div>

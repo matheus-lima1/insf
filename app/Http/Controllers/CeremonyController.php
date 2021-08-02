@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Ceremony;
+use App\Http\Controllers\DateTime;
 
 class CeremonyController extends Controller
 {
@@ -104,5 +105,30 @@ class CeremonyController extends Controller
         $ceremony->delete();
 
         return redirect()->route('ceremonies.index');
+    }
+
+    public function tithe(){
+        $loyals = \App\Loyal::all();
+        $tithe_loyals = 0;
+        $tithe_ceremonies = 0;
+        foreach($loyals as $loyal){
+            $tithe_loyals = $tithe_loyals+$loyal->tithe;
+        }
+
+        $ceremonies = $this->ceremony->all();
+        foreach($ceremonies as $ceremony){
+            $date = $ceremony->date;
+            $date = new \DateTime($date);
+            $validation = $date->diff(new \DateTime(date('Y-m-d')));
+
+            if($validation->y <=0 && $validation->m <= 1){
+                $tithe_ceremonies = $tithe_ceremonies + $ceremony->tithe;
+            }
+        }
+
+        $total = $tithe_ceremonies+$tithe_loyals;
+
+        return view('tithe', compact('total','tithe_ceremonies','tithe_loyals'));
+        
     }
 }

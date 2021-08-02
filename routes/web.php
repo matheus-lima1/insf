@@ -22,3 +22,6 @@ Route::resource('priests','PriestController');
 Route::resource('loyals','LoyalController');
 Route::resource('ceremonialists','CeremonialistController');
 Route::resource('ceremonies','CeremonyController')->middleware('guest');
+
+Route::get('report/tithe','CeremonyController@tithe')->name('report.tithe');
+Route::get('report/statistic','LoyalController@statistic')->name('report.statistic');
