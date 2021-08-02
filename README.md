@@ -1,61 +1,68 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# COM210 - Engenharia de Software
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/matheus-lima1/COM210/blob/main/LICENSE)
 
-## About Laravel
+> Status: Finalizado ✅
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Sobre o projeto
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+O Sistema INSF é um sistema de controle e gestão para igrejas, desenvolvido como trabalho final da disciplina COM210.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Ele consiste em uma série de funcionalidades que facilitam a gestão dos recursos de uma igreja, onde os dados são adicionados pelos usuários do sistema. Inclui um dashboard com gráficos baseados nestes dados, uma agenda para consulta de horários de cerimônias e a emissão de relatórios, também baseados nos dados.
 
-## Learning Laravel
+## Integrantes do grupo 6 🙋‍♂️🙋‍♀️:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
++ Gustavo Salles 
++ Matheus Brandão Rezende de Lima 
++ Natália Mattos Tabosa de Almeida 
++ Pedro Lucas Guerra de Lima 
++ Vinicius Barbosa 
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# Layout Web
 
-## Laravel Sponsors
+## Editar e remover ator
+> ![Web 1](https://github.com/matheus-lima1/COM210/blob/main/assets/WhatsApp%20Image%202021-08-02%20at%2017.41.08.jpeg)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Inserir ator
+> ![Web 2](https://github.com/matheus-lima1/COM210/blob/main/assets/WhatsApp%20Image%202021-08-02%20at%2018.46.10.jpeg)
 
-### Premium Partners
+## Relatório de entrada de caixa
+> ![Web 3](https://github.com/matheus-lima1/COM210/blob/main/assets/WhatsApp%20Image%202021-08-02%20at%2017.36.47.jpeg)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+## Estatística de sexo
+> ![Web 4](https://github.com/matheus-lima1/COM210/blob/main/assets/WhatsApp%20Image%202021-08-02%20at%2018.45.31.jpeg)
 
-## Contributing
+## Estatística de idade
+> ![Web 5](https://github.com/matheus-lima1/COM210/blob/main/assets/WhatsApp%20Image%202021-08-02%20at%2018.45.40.jpeg)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Tecnologias utilizadas
 
-## Code of Conduct
+## Back end
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
++ Laravel
++ MySQL
++ Git & GitHub
 
-## Security Vulnerabilities
+## Front end
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
++ Bootstrap
++ HTML
++ CSS
 
-## License
+# Como executar o projeto
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Pré-requisitos: Laravel
+
+```bash
+# Baixar sistema 
+Baize o sistema diretamente pelo GitHub
+
+# Criar banco de dados
+Crie um banco de dados especifico para o projeto
+
+# Integração do projeto com banco de dados
+Acesse o arquivo "database" e modifique os dados de acordo com o banco de dados presente na máquina
+
+# Rodar todas as migrates já feitas
+Use o comando "php artisan migrate" no Prompt de comando
+```
