@@ -131,4 +131,18 @@ class CeremonyController extends Controller
         return view('tithe', compact('total','tithe_ceremonies','tithe_loyals'));
         
     }
+
+    public function reportView(){
+        $ceremonies = $this->ceremony->paginate(15);
+        return view('ceremonies.reportView', compact('ceremonies'));
+    }
+
+    public function report($id){
+        $ceremony = $this->ceremony->find($id);
+        $loyals = \App\Loyal::all();
+        $priest = \App\Priest::find($ceremony->priest_id);
+        $ceremonialists = $ceremony->ceremonialists;
+
+        return view('ceremonies.report', compact('ceremony','loyals','priest','ceremonialists'));
+    }
 }

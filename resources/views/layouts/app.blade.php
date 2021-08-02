@@ -52,7 +52,7 @@
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="{{route('report.tithe')}}">Dízimo do Mês</a>
               <a class="dropdown-item" href="{{route('report.statistic')}}">Estatística de Fiéis</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="{{route('report.ceremony.view')}}">Cerimônias Detalhadas</a>
             </div>
           </div>
         </li>

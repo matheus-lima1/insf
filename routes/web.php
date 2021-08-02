@@ -25,3 +25,6 @@ Route::resource('ceremonies','CeremonyController')->middleware('guest');
 
 Route::get('report/tithe','CeremonyController@tithe')->name('report.tithe');
 Route::get('report/statistic','LoyalController@statistic')->name('report.statistic');
+
+Route::get('report/ceremony','CeremonyController@reportView')->name('report.ceremony.view');
+Route::get('report/ceremony/{ceremony}','CeremonyController@report')->name('report.ceremony');
