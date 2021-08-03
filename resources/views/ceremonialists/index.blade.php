@@ -1,8 +1,7 @@
-
 @extends('layouts.app') 
 
 @section('content')
-    <a href="{{route('ceremonialists.create')}}" class="btn btn-lg btn-success mb-3">Registrar Cerimonialista</a>
+    <a href="{{route('ceremonialists.create')}}" class="btn btn-lg mb-3" style="background-color:  #ED9021; color:white">Registrar Cerimonialista</a>
 
     <table class="table table-striped">
         <thead>
@@ -26,7 +25,7 @@
                     @if($c->acting == 'singer')
                         <td>Cantor</td>
                     @elseif($c->acting == 'helper')
-                        <td>Ajduante</td>
+                        <td>Ajudante</td>
                     @else
                         <td>Coroinha</td>
                     @endif

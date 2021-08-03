@@ -22,7 +22,7 @@
 
     <div class="form-group">
         <label>Atuação *</label>
-        <select class="form-control form-control-sm" name="sex" required>
+        <select class="form-control form-control-sm" name="acting" required>
             <option value="altar">Coroinha</option>
             <option value="helper">Ajudante</option>
             <option value="singer">Cantor</option>
@@ -68,7 +68,7 @@
 
 
     <div>
-        <button type="submit" class="btn btn-lg btn-success">Atualizar Cerimonialista</button>
+        <button type="submit" class="btn btn-lg " style="background-color:  #ED9021; color:white">Atualizar Cerimonialista</button>
     </div>
 </form>
 

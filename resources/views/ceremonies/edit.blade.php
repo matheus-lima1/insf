@@ -46,7 +46,7 @@
 
 
     <div>
-        <button type="submit" class="btn btn-lg btn-success">Atualizar Cerimônia</button>
+        <button type="submit" class="btn btn-lg" style="background-color:  #ED9021; color:white">Atualizar Cerimônia</button>
     </div>
 </form>
 

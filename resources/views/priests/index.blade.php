@@ -2,7 +2,7 @@
 @extends('layouts.app') 
 
 @section('content')
-    <a href="{{route('priests.create')}}" class="btn btn-lg btn-success mb-3">Registrar Padre</a>
+    <a href="{{route('priests.create')}}" class="btn btn-lg mb-3" style="background-color:  #ED9021; color:white">Registrar Padre</a>
 
     <table class="table table-striped">
         <thead>

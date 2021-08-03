@@ -65,9 +65,8 @@
 
 
     <div>
-        <button type="submit" class="btn btn-lg btn-success">Registrar Cerimonia</button>
+        <button type="submit" class="btn btn-lg" style="background-color:  #ED9021; color:white">Registrar Cerimonia</button>
     </div>
 </form>
 
 @endsection
-

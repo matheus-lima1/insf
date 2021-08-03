@@ -1,8 +1,7 @@
-
 @extends('layouts.app') 
 
 @section('content')
-    <a href="{{route('loyals.create')}}" class="btn btn-lg btn-success mb-3">Registrar Fiel Dizimista</a>
+    <a href="{{route('loyals.create')}}" class="btn btn-lg mb-3" style="background-color:  #ED9021; color:white">Registrar Fiel Dizimista</a>
 
     <table class="table table-striped">
         <thead>

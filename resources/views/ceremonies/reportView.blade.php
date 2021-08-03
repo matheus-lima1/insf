@@ -1,4 +1,3 @@
-
 @extends('layouts.app') 
 
 @section('content')
@@ -24,7 +23,7 @@
                     <td>R$ {{$c->tithe}}</td>
                     <td>
                         <div class="btn-group">
-                            <a href="{{route('report.ceremony',['ceremony' => $c->id])}}" class="btn btn-sm btn-primary">VISUALIAZR</a>
+                            <a href="{{route('report.ceremony',['ceremony' => $c->id])}}" class="btn btn-sm" style="background-color:  #ED9021; color:white">VISUALIAZR</a>
                         </div>
 
                     </td>

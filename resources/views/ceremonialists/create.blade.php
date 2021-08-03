@@ -144,9 +144,8 @@
 
 
     <div>
-        <button type="submit" class="btn btn-lg btn-success">Registrar Cerimonialista</button>
+        <button type="submit" class="btn btn-lg " style="background-color:  #ED9021; color:white">Registrar Cerimonialista</button>
     </div>
 </form>
 
 @endsection
-

@@ -154,9 +154,8 @@
 
 
     <div>
-        <button type="submit" class="btn btn-lg btn-success">Registrar Fiel</button>
+        <button type="submit" class="btn btn-lg" style="background-color:  #ED9021; color:white">Registrar Fiel</button>
     </div>
 </form>
 
 @endsection
-

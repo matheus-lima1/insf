@@ -31,7 +31,7 @@
     </div>
 
     <div>
-        <button type="submit" class="btn btn-lg btn-success">Atualizar Padre</button>
+        <button type="submit" class="btn btn-lg " style="background-color:  #ED9021; color:white">Atualizar Padre</button>
     </div>
 </form>
 

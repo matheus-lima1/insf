@@ -24,8 +24,8 @@
 	<title>INSF</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">INSF</a>
+  <nav class="navbar navbar-expand-lg navbar-dark py-1" style="background-color:#ED9021;">
+    <a class="navbar-brand" href="/"><img  class="" src="{{ asset('img/logo.png') }}" style="max-width:70px; max-height:70px;" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,8 +45,8 @@
           <a class="nav-link" href="{{route('loyals.index')}}">Fiéis</a>
         </li>
         <li>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="dropdown ">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" style="background-color: #ED9021; color: white " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Relatórios
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -66,7 +66,10 @@
 
   @yield('scripts')
 
+  <style>
+    li, .btn{
+      font-size: 20px;
+    }
+  </style>
 </body>
 </html>
-
-
